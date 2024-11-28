@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #444;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .portfolio-item {
+            display: inline-block;
+            width: 30%;
+            margin-right: 2%;
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .portfolio-item img {
+            width: 100%;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+        }
+        .contact-form button {
+            background-color: #333;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Personal Website</h1>
+        <p>Discover more about me, my work, and how to contact me!</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Home</h2>
+            <p>Welcome to my personal website! I am excited to share my journey, skills, and work with you. Take a look around, and feel free to reach out with any questions.</p>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm Jane Doe, a web developer passionate about creating user-friendly and accessible websites. With a background in computer science and design, I blend technical expertise with creativity to build dynamic and engaging digital experiences.</p>
+            <h3>Skills:</h3>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>React, Node.js</li>
+                <li>PHP, MySQL</li>
+                <li>UI/UX Design</li>
+                <li>SEO Optimization</li>
+            </ul>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <p>Here are some of the projects I have worked on. Click on the images for more details:</p>
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/400" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Responsive website built using HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/400" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>Full-stack web application with React and Node.js.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/400" alt="Project 3">
+                <h3>Project 3</h3>
+                <p>Portfolio website showcasing web development projects.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>If you'd like to get in touch, please use the form below or reach out to me directly via email at janedoe@example.com.</p>
+            <div class="contact-form">
+                <h3>Contact Form</h3>
+                <form action="#">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Jane Doe | All rights reserved</p>
+    </footer>
+
+</body>
+</html>
