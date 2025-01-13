@@ -39,7 +39,7 @@ body {
   height: 50%;
 }
 
-.container .logo {
+.box .logo {
     font-family: 'Libre Barcode 128 Text';font-size: 50px;
 }
 
@@ -49,14 +49,17 @@ body {
 
 #verse {
   order: 1;
+  -webkit-order: 1;
 }
 
 #weather {
   order: 3;
+  -webkit-order: 3;
 }
 
 #links {
   order: 2;
+  -webkit-order: 2;
 }
 
 @media only screen and (max-width:800px) {
@@ -68,14 +71,17 @@ body {
     }
     #verse {
       order: 1;
+      -webkit-order: 1;
     }
     
     #weather {
       order: 2;
+      -webkit-order: 2;
     }
     
     #links {
       order: 3;
+      -webkit-order: 3;
     }
   } 
   @media only screen and (max-width:500px) {
@@ -86,13 +92,16 @@ body {
     }
     #verse {
       order: 2;
+      -webkit-order: 2;
     }
     
     #weather {
       order: 1;
+      -webkit-order: 1;
     }
     
     #links {
       order: 3;
+      -webkit-order: 3;
     }
   }
