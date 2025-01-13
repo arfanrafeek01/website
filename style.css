@@ -1,0 +1,98 @@
+html {
+    height:100%;
+  }
+
+body {
+    background-image: url(bg-image.webp);
+    background-position: center;  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+    display: block;
+    background-color: black;
+    /* height: 8em; */
+    border-radius: 1.0em;
+    font: 1.2em sans-serif;
+    width: 30%;
+    height: auto;
+    opacity: 0.65;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+  
+    /* display: flex; */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.side-box {
+  height: 50%;
+}
+
+.container .logo {
+    font-family: 'Libre Barcode 128 Text';font-size: 50px;
+}
+
+.box a {
+  all: unset;
+}
+
+#verse {
+  order: 1;
+}
+
+#weather {
+  order: 3;
+}
+
+#links {
+  order: 2;
+}
+
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .box {
+      display: block;
+      width: 45%;
+      margin-top: 40px;
+    }
+    #verse {
+      order: 1;
+    }
+    
+    #weather {
+      order: 2;
+    }
+    
+    #links {
+      order: 3;
+    }
+  } 
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .box {
+        width: 80%;
+        margin-top: 20px;
+    }
+    #verse {
+      order: 2;
+    }
+    
+    #weather {
+      order: 1;
+    }
+    
+    #links {
+      order: 3;
+    }
+  }
